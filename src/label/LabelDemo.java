@@ -44,7 +44,7 @@ public class LabelDemo extends SinkAdapter {
 	public static void main(String[] args) throws ElementNotFoundException,
 			IOException, GraphParseException {
 		Graph g = new SingleGraph("imdb");
-		g.read("/home/stefan/tmp/imdb/imdb.dgs");
+		g.read("data/imdb.dgs");
 		for (Node node : g) {
 			node.removeAttribute("ui.size");
 			node.removeAttribute("label");
